@@ -1,6 +1,6 @@
 # master_meter
 2019-1-29 完成功能：
-（1） 连接数据库-mysql
+（1） 连接数据库-mysql\n
 （2） 底部导航栏-fragment
  (3)  动态显示-一直显示最后一个数字
 （4） 图表-AChartEngine 
