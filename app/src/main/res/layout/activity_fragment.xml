@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.myapplication.FragmentActivity">
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/main_tab"
+            style="@style/Custom.TabRadioButton"
+           android:layout_marginTop="600dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableTop="@drawable/main"
+            android:text=" 主界面" />
+
+        <RadioButton
+            android:id="@+id/wave_tab"
+            style="@style/Custom.TabRadioButton"
+            android:layout_marginTop="600dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/wave"
+            android:text="图表" />
+
+        <RadioButton
+            android:id="@+id/history_tab"
+            android:layout_marginTop="600dp"
+            style="@style/Custom.TabRadioButton"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/history"
+            android:text="历史" />
+    </RadioGroup>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/head_layout"
+        app:menu="@menu/main"
+       >
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

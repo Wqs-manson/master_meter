@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="帐号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="63dp"
+        android:id="@+id/tex_reg_user"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/Edt_reg_user"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tex_reg_user"
+        android:layout_alignTop="@+id/tex_reg_user"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/tex_reg_user"
+        android:layout_toRightOf="@+id/tex_reg_user"
+        android:background="#FFF"
+        android:hint="请输入帐号"
+        android:inputType="text"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Edt_reg_psw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tex_psw"
+        android:layout_alignLeft="@+id/Edt_reg_user"
+        android:layout_alignStart="@+id/Edt_reg_user"
+        android:layout_alignTop="@+id/tex_psw"
+        android:background="#FFF"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Edt_reg_psw1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:background="#FFF"
+        android:inputType="textPassword"
+        android:hint="请再次输入密码"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/Edt_reg_user"
+        android:layout_alignStart="@+id/Edt_reg_user"
+        android:layout_alignTop="@+id/textView" />
+
+    <Button
+        android:text="注册"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Edt_reg_psw1"
+        android:layout_marginTop="61dp"
+        android:id="@+id/btn_reg"
+        android:background="#3f51b5"
+        android:textColor="#FFF"
+        android:layout_alignRight="@+id/Edt_reg_psw1"
+        android:layout_alignEnd="@+id/Edt_reg_psw1"
+        android:layout_alignLeft="@+id/tex_psw"
+        android:layout_alignStart="@+id/tex_psw" />
+
+    <TextView
+        android:text="密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/tex_psw"
+        android:layout_below="@+id/tex_reg_user"
+        android:layout_alignLeft="@+id/tex_reg_user"
+        android:layout_alignStart="@+id/tex_reg_user" />
+
+    <TextView
+        android:text="确认密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/tex_psw"
+        android:layout_alignRight="@+id/tex_psw"
+        android:layout_alignEnd="@+id/tex_psw" />
+</RelativeLayout>

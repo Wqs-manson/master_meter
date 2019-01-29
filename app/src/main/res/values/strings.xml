@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">智能电表</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="chart_name">图表</string>
+</resources>

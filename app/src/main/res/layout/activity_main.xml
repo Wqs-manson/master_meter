@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.myapplication.MainActivity">
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/main_show"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentTop="true"
+         android:id="@+id/linearLayout"
+         android:orientation="horizontal">
+     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/Edt_user"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/enter"
+            android:hint="请输入账户"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/Edt_paswd"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/paswd"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textSize="12sp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/Edt_user"
+            android:layout_alignStart="@+id/Edt_user" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Edt_paswd"
+            android:layout_alignEnd="@+id/Edt_paswd" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/btn_Mreg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_login"
+            android:background="@drawable/button_shape"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:layout_alignBottom="@+id/btn_Mreg"
+            android:layout_alignTop="@+id/btn_Mreg"
+            android:layout_toEndOf="@+id/btn_Mreg"
+            android:onClick="quit"
+            android:layout_margin="10dp"
+            android:text="退出" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
