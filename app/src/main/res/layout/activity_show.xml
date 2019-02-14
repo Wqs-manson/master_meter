@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_show"></include>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:orientation="vertical"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp">
+        <TextView
+            android:id="@+id/tex_V"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81dp"
+            android:text="电压"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/Edt_Show_V"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:background="#FFF"
+            android:layout_alignBaseline="@+id/tex_V"
+            android:layout_alignBottom="@+id/tex_V"
+            android:layout_toRightOf="@+id/tex_V"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/tex_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="71dp"
+            android:text="电流"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/Edt_Show_V"
+            android:layout_toStartOf="@+id/Edt_Show_V" />
+        <EditText
+            android:id="@+id/Edt_Show_A"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:background="#FFF"
+            android:inputType="text"
+            android:layout_alignBaseline="@+id/tex_I"
+            android:layout_alignBottom="@+id/tex_I"
+            android:layout_alignLeft="@+id/Edt_Show_V"
+            android:layout_alignStart="@+id/Edt_Show_V" />
+        <TextView
+            android:id="@+id/tex_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="功率"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/Edt_Show_A"
+            android:layout_alignStart="@+id/tex_I" />
+        <EditText
+            android:id="@+id/Edt_Show_P"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:background="#FFF"
+            android:inputType="text"
+            android:layout_alignBaseline="@+id/tex_P"
+            android:layout_alignBottom="@+id/tex_P"
+            android:layout_alignLeft="@+id/Edt_Show_A"
+            android:layout_alignStart="@+id/Edt_Show_A" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_Show_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:layout_alignBaseline="@+id/btn_Show_start"
+        android:layout_alignBottom="@+id/btn_Show_start"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="74dp"
+        android:layout_marginEnd="74dp" />
+    <Button
+        android:id="@+id/btn_Show_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="39dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_toStartOf="@+id/btn_Show_end"
+        android:layout_marginEnd="63dp" />
+</RelativeLayout>

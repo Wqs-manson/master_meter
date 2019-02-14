@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppTheme_Light" parent="Theme.AppCompat.Light">
+    </style>
+    <style name="AppTheme_Black" parent="Theme.AppCompat.DayNight">
+    </style>
+    <style name="AppTheme_No" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <!--
+     Theme.AppCompat.Light.DarkActionBar   标题栏黑色，底色为白色
+     Theme.AppCompat.DayNight              标题栏灰色，底色为白色
+     -->
+    <!-- 自定义控件风格-->
+    <style name="Custom" />
+
+    <style name="Custom.TabRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="CustomTextApperance" >
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 自定义控件风格-->
+</resources>
